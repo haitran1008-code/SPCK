@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+
+<body>
+    
+    <h1 id="emailID"></h1>
+    <div id = "movie-container"></div>
+<script>
+    const emaillocal = localStorage.getItem('username')
+    if (emaillocal == null) {
+        window.location.href = './login.html';
+    }
+
+    document.getElementById('emailID').innerHTML =`Xin chào, ${emaillocal}`
+
+    const url = 'https://692267f109df4a4923225b01.mockapi.io/comics'
+    const movies = []
+    fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+            movies.push(...data)
+
+        const movieContainer = document.getElementById("movie-container")
+
+        movies.forEach((a) => {
+            if (a.isHot == true) {
+                movieContainer.innerHTML += 
+            `<div class = 'card'>
+                <div class="image">
+                    <div class = 'tag'>
+                        <p class = 'hot_tag'>HOT</p>
+                    </div>
+                    <img src= ${a.thumbnailUrl} alt="">
+                </div>
+                <div class="title">
+                    <a href="">${a.title}</a>
+                </div>
+            </div>`
+            }
+            else {
+                movieContainer.innerHTML += 
+            `<div class = 'card'>
+                <div class="image">
+                    <img src= ${a.thumbnailUrl} alt="">
+                </div>
+                <div class="title">
+                    <a href="">${a.title}</a>
+                </div>
+            </div>`
+            }
+        });
+    })
+</script>
+</body>
+</html>
