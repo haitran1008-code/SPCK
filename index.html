@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+  <div id = 'test'>
+
+  </div>
   <div class="wrapper">
       <div class="title-text">
         <div class="title login">Login Form</div>
@@ -28,10 +31,11 @@
             <div class="field">
               <input type="password" placeholder="Password" id='si_password' required>
             </div>
+            <div id="textLogIn" class="styleText"></div>
             <div class="pass-link"><a href="#">Forgot password?</a></div>
             <div class="field btn">
               <div class="btn-layer"></div>
-              <input type="button" value="Login">
+              <input type="button" id = 'btn_signin' value="Login">
             </div>
             <div class="signup-link">Not a member? <a href="">Signup now</a></div>
           </form>
@@ -39,12 +43,14 @@
             <div class="field">
               <input type="text" placeholder="Email Address" id='su_email' required>
             </div>
+            <div id="textEmailSignUp" class="styleText"></div>
             <div class="field">
               <input type="password" placeholder="Password" id='su_password' required>
             </div>
             <div class="field">
               <input type="password" placeholder="Confirm password" id='su_cf_password' required>
             </div>
+            <div id="textPwdSignUp" class="styleText"></div>
             <div class="field btn">
               <div class="btn-layer"></div>
               <input type="button" id = 'btn_signup' value="Signup">
@@ -100,6 +106,23 @@
         err.innerHTML = 'Sai thông tin đăng nhập';
     }
 });
+</script>
+
+<script>
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+// let sum_with_2 = arr.map((num) => num + 2)
+// let even_num = arr.filter((num) => num % 2 === 0)
+// console.log(sum_with_2)
+// console.log(even_num)
+
+fetch('https://dummyjson.com/products')
+  .then((res) => res.json())
+  .then((data) => {
+    let products = data.products
+    // console.log(products)
+  //   document.getElementById('test').innerHTML = `<img src = '${products[0].images[0]}' alt = '${products[0].title}'>
+  // <div>${products[0].price}</div>`
+  })
 </script>
 
 <script type="module" src="./log_in.js"></script>

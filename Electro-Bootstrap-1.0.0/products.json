@@ -1,0 +1,94 @@
+{
+    "products:": [
+        {
+            "id": 1,
+            "title": "iPhone 6",
+            "image": "./img/product-3.png",
+            "f_price": "$80.00",
+            "n_price": "$35.00",
+            "new": false,
+            "sale": true,
+            "star": 5
+        },
+        {
+            "id": 2,
+            "title": "Bộ máy ảnh Canon EOS 5D & Ống kính 50mm",
+            "image": "./img/product-4.png",
+            "f_price": "$440.00",
+            "n_price": "$360.00",
+            "new": false,
+            "sale": true,
+            "star": 5
+        },
+        {
+            "id": 3,
+            "title": "Ống kính Sigma 24-70mm f/2.8 EX DG HSM",
+            "image": "./img/product-5.png",
+            "f_price": "$400.00",
+            "n_price": "$400.00",
+            "new": true,
+            "sale": false,
+            "star": 5
+        },
+        {
+            "id": 4,
+            "title": "Nest Cam",
+            "image": "./img/product-6.png",
+            "f_price": "$150.00",
+            "n_price": "$130.00",
+            "new": true,
+            "sale": true,
+            "star": 5
+        },
+        {
+            "id": 5,
+            "title": "Polaroid OneStep 2",
+            "image": "./img/product-7.png",
+            "f_price": "$250.00",
+            "n_price": "$230.00",
+            "new": true,
+            "sale": true,
+            "star": 5
+        },
+        {
+            "id": 6,
+            "title": "Sony WH-1000XM3",
+            "image": "./img/product-8.png",
+            "f_price": "$250.00",
+            "n_price": "$250.00",
+            "new": true,
+            "sale": false,
+            "star": 5
+        },
+        {
+            "id": 7,
+            "title": "Bộ sản phẩm Apple (iMac & iPad)",
+            "image": "./img/product-9.png",
+            "f_price": "$2600.00",
+            "n_price": "$2550.00",
+            "new": true,
+            "sale": true,
+            "star": 5
+        },
+        {
+            "id": 8,
+            "title": "iPhone 5",
+            "image": "./img/product-10.png",
+            "f_price": "$35.00",
+            "n_price": "$15.00",
+            "new": false,
+            "sale": true,
+            "star": 5
+        },
+        {
+            "id": 9,
+            "title": "Máy tính xách tay",
+            "image": "./img/product-11.png",
+            "f_price": "$600.00",
+            "n_price": "$300.00",
+            "new": true,
+            "sale": true,
+            "star": 5
+        }
+    ]
+}
