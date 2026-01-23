@@ -18,7 +18,7 @@
             "n_price": "$360.00",
             "new": false,
             "sale": true,
-            "star": 5
+            "star": 4
         },
         {
             "id": 3,
@@ -38,7 +38,7 @@
             "n_price": "$130.00",
             "new": true,
             "sale": true,
-            "star": 5
+            "star": 3
         },
         {
             "id": 5,
@@ -58,7 +58,7 @@
             "n_price": "$250.00",
             "new": true,
             "sale": false,
-            "star": 5
+            "star": 2
         },
         {
             "id": 7,
@@ -78,7 +78,7 @@
             "n_price": "$15.00",
             "new": false,
             "sale": true,
-            "star": 5
+            "star": 1
         },
         {
             "id": 9,

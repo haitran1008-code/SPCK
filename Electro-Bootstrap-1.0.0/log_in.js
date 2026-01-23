@@ -17,7 +17,7 @@ buttonLogIn.addEventListener("click", () => {
         let isValuePassword = validatePassword(pLogIn)
 
         if(isValueEmail && isValuePassword){
-            alert("Đăng nhập thành công")
+            window.location.href = "./index.html"
         } 
         else {
             text.innerText = "* Vui lòng kiểm tra lại tài khoản hoặc mật khẩu"

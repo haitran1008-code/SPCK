@@ -20,8 +20,6 @@ buttonSignUp.addEventListener('click', () => {
     }
 
     let getLocalStorage = localStorage.getItem('userList')
-    // console.log(getLocalStorage)
-    // console.log(getLocalStorage.length)
 
     if (getLocalStorage === null || getLocalStorage.length === undefined) {
         if (emailSignUp.match(regexEmail)) {
@@ -35,9 +33,7 @@ buttonSignUp.addEventListener('click', () => {
                     textPwd.innerText = ""
                     userList.push(JSON.stringify(user))
                     localStorage.setItem("userList", `[` + userList + `]`)
-                    // localStorage.setItem("userList",userList)
-                    // window.location.href = "../index.html"
-                    alert("Đăng ký thành công")
+                    window.location.href = "./index.html"
                 }
             } 
             else {
@@ -67,7 +63,7 @@ buttonSignUp.addEventListener('click', () => {
                         textPwd.innerText = ''
                         userList.push(JSON.stringify(user))
                         localStorage.setItem('userList',`[` + userList + `]`)
-                        // localStorage.setItem('userList', userList)
+                        window.location.href = "./index.html"
                     }
                 }
                 else {
